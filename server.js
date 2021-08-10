@@ -136,4 +136,8 @@ app.post("/lyrics", (req, res) => {
 	})(artist, title);
 });
 
+app.get("/test", (req, res) => {
+	res.status(200).send("Nice");
+});
+
 app.listen(process.env.PORT);
